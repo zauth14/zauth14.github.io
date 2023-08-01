@@ -1,12 +1,23 @@
 const MyModule = (function() {
     "use strict";
  
-    var img = document.getElementById('img');
+    var img = id('img');
     var slides = ['community_work.jpeg','penn_engineering.jpg','basketball.jpeg','basketball2.jpeg','news_clipping.jpeg','bioplastics.jpeg','bioplastics_poster.jpg'];
     var Start=0;
 
     function init(){
         addClickEventListenersToLinks();
+    }
+
+    function smoothScrolling() {
+      qsa('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      qs(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+      });
+      });
+      });
     }
 
     function slider(){
@@ -33,6 +44,7 @@ const MyModule = (function() {
       const href = link.getAttribute('href');
       const section = qs(href);
       section.classList.add('active');
+      smoothScrolling();
       });
       });
     }
