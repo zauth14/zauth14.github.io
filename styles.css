@@ -75,6 +75,11 @@ main {
 #introduction p {
     font-size: 12pt;
 }
+
+#about, #mywork, #contact {
+    font-size: 13pt;
+    padding: 20px;
+}
   
 a {
 	color: #1c83f1;

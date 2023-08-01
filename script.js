@@ -7,6 +7,7 @@ const MyModule = (function() {
 
     function init(){
         addClickEventListenersToLinks();
+        smoothScrolling();
     }
 
     function smoothScrolling() {
@@ -44,7 +45,6 @@ const MyModule = (function() {
       const href = link.getAttribute('href');
       const section = qs(href);
       section.classList.add('active');
-      smoothScrolling();
       });
       });
     }
