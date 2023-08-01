@@ -28,20 +28,20 @@ nav a:hover {
     color: #007BFF;
 }
 
-main{
+main {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 /* active section styles */
 section.active {
 	color:rgb(32, 10, 77);
-	display: flex;
+    display: flex;
     flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 200px;
 	background-color: rgb(226, 225, 223);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +67,6 @@ section.active {
 
 #images {
     max-width: 50%;
-
     padding: 50px;
 }
   
