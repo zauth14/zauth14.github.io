@@ -61,7 +61,8 @@ main {
 
 #introduction #img {
     flex: 1;
-    max-width: 100%; 
+    width: 100%; 
+    height: auto;
     padding: 20px;
     object-fit: contain;
 }
@@ -88,4 +89,15 @@ a {
 
 a:hover{
     color: #433c3c;
+}
+
+/* Footer styles */
+footer {
+    font-family: Arial, sans-serif;
+    color: rgb(32, 10, 77); 
+    font-size: 14pt;
+    background-color: rgb(226, 225, 223);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
 }
